@@ -39,9 +39,6 @@ namespace YeOldeFake5eShop
             var fiveERepsonse = client.GetStringAsync("https://www.dnd5eapi.co/api/equipment").Result;
             // The response has a name/value pair where the quote is called 'quote'
             var kanyeQuote = JObject.Parse(fiveERepsonse).GetValue("quote").ToString();
-            Console.WriteLine("-----------------------");
-            Console.WriteLine($"Kanye: {kanyeQuote}");
-
         }
         */
     }

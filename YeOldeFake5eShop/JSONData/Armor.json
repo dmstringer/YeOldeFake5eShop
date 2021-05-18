@@ -1,118 +1,27 @@
 [
   {
-    "index": "breastplate",
-    "name": "Breastplate",
+    "index": "padded",
+    "name": "Padded",
     "equipment_category": {
       "index": "armor",
       "name": "Armor",
       "url": "/api/equipment-categories/armor"
     },
-    "armor_category": "Medium",
+    "armor_category": "Light",
     "armor_class": {
-      "base": 14,
+      "base": 11,
       "dex_bonus": true,
-      "max_bonus": 2
-    },
-    "str_minimum": 0,
-    "stealth_disadvantage": false,
-    "weight": 20,
-    "cost": {
-      "quantity": 400,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/breastplate"
-  },
-  {
-    "index": "chain-mail",
-    "name": "Chain Mail",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Heavy",
-    "armor_class": {
-      "base": 16,
-      "dex_bonus": false,
       "max_bonus": null
     },
-    "str_minimum": 13,
-    "stealth_disadvantage": true,
-    "weight": 55,
-    "cost": {
-      "quantity": 75,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/chain-mail"
-  },
-  {
-    "index": "chain-shirt",
-    "name": "Chain Shirt",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Medium",
-    "armor_class": {
-      "base": 13,
-      "dex_bonus": true,
-      "max_bonus": 2
-    },
-    "str_minimum": 0,
-    "stealth_disadvantage": false,
-    "weight": 20,
-    "cost": {
-      "quantity": 50,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/chain-shirt"
-  },
-  {
-    "index": "half-plate",
-    "name": "Half Plate",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Medium",
-    "armor_class": {
-      "base": 15,
-      "dex_bonus": true,
-      "max_bonus": 2
-    },
     "str_minimum": 0,
     "stealth_disadvantage": true,
-    "weight": 40,
+    "weight": 8,
     "cost": {
-      "quantity": 750,
+      "quantity": 5,
       "unit": "gp"
     },
-    "url": "/api/equipment/half-plate"
-  },
-  {
-    "index": "hide",
-    "name": "Hide",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Medium",
-    "armor_class": {
-      "base": 12,
-      "dex_bonus": true,
-      "max_bonus": 2
-    },
-    "str_minimum": 0,
-    "stealth_disadvantage": false,
-    "weight": 12,
-    "cost": {
-      "quantity": 10,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/hide"
+    "url": "/api/equipment/padded",
+    "display_order": 1
   },
   {
     "index": "leather",
@@ -135,145 +44,8 @@
       "quantity": 10,
       "unit": "gp"
     },
-    "url": "/api/equipment/leather"
-  },
-  {
-    "index": "padded",
-    "name": "Padded",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Light",
-    "armor_class": {
-      "base": 11,
-      "dex_bonus": true,
-      "max_bonus": null
-    },
-    "str_minimum": 0,
-    "stealth_disadvantage": true,
-    "weight": 8,
-    "cost": {
-      "quantity": 5,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/padded"
-  },
-  {
-    "index": "plate",
-    "name": "Plate",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Heavy",
-    "armor_class": {
-      "base": 18,
-      "dex_bonus": false,
-      "max_bonus": null
-    },
-    "str_minimum": 15,
-    "stealth_disadvantage": true,
-    "weight": 65,
-    "cost": {
-      "quantity": 1500,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/plate"
-  },
-  {
-    "index": "ring-mail",
-    "name": "Ring Mail",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Heavy",
-    "armor_class": {
-      "base": 14,
-      "dex_bonus": false,
-      "max_bonus": null
-    },
-    "str_minimum": 0,
-    "stealth_disadvantage": true,
-    "weight": 40,
-    "cost": {
-      "quantity": 30,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/ring-mail"
-  },
-  {
-    "index": "scale-mail",
-    "name": "Scale Mail",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Medium",
-    "armor_class": {
-      "base": 14,
-      "dex_bonus": true,
-      "max_bonus": 2
-    },
-    "str_minimum": 0,
-    "stealth_disadvantage": true,
-    "weight": 45,
-    "cost": {
-      "quantity": 50,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/scale-mail"
-  },
-  {
-    "index": "shield",
-    "name": "Shield",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Shield",
-    "armor_class": {
-      "base": 2,
-      "dex_bonus": false,
-      "max_bonus": null
-    },
-    "str_minimum": 0,
-    "stealth_disadvantage": false,
-    "weight": 6,
-    "cost": {
-      "quantity": 10,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/shield"
-  },
-  {
-    "index": "splint",
-    "name": "Splint",
-    "equipment_category": {
-      "index": "armor",
-      "name": "Armor",
-      "url": "/api/equipment-categories/armor"
-    },
-    "armor_category": "Heavy",
-    "armor_class": {
-      "base": 17,
-      "dex_bonus": false,
-      "max_bonus": null
-    },
-    "str_minimum": 15,
-    "stealth_disadvantage": true,
-    "weight": 60,
-    "cost": {
-      "quantity": 200,
-      "unit": "gp"
-    },
-    "url": "/api/equipment/splint"
+    "url": "/api/equipment/leather",
+    "display_order": 2
   },
   {
     "index": "studded-leather",
@@ -296,6 +68,247 @@
       "quantity": 45,
       "unit": "gp"
     },
-    "url": "/api/equipment/studded-leather"
+    "url": "/api/equipment/studded-leather",
+    "display_order": 3
+  },
+  {
+    "index": "hide",
+    "name": "Hide",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Medium",
+    "armor_class": {
+      "base": 12,
+      "dex_bonus": true,
+      "max_bonus": 2
+    },
+    "str_minimum": 0,
+    "stealth_disadvantage": false,
+    "weight": 12,
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/hide",
+    "display_order": 4
+  },
+  {
+    "index": "chain-shirt",
+    "name": "Chain Shirt",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Medium",
+    "armor_class": {
+      "base": 13,
+      "dex_bonus": true,
+      "max_bonus": 2
+    },
+    "str_minimum": 0,
+    "stealth_disadvantage": false,
+    "weight": 20,
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/chain-shirt",
+    "display_order": 5
+  },
+  {
+    "index": "scale-mail",
+    "name": "Scale Mail",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Medium",
+    "armor_class": {
+      "base": 14,
+      "dex_bonus": true,
+      "max_bonus": 2
+    },
+    "str_minimum": 0,
+    "stealth_disadvantage": true,
+    "weight": 45,
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/scale-mail",
+    "display_order": 6
+  },
+  {
+    "index": "breastplate",
+    "name": "Breastplate",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Medium",
+    "armor_class": {
+      "base": 14,
+      "dex_bonus": true,
+      "max_bonus": 2
+    },
+    "str_minimum": 0,
+    "stealth_disadvantage": false,
+    "weight": 20,
+    "cost": {
+      "quantity": 400,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/breastplate",
+    "display_order": 7
+  },
+  {
+    "index": "half-plate",
+    "name": "Half Plate",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Medium",
+    "armor_class": {
+      "base": 15,
+      "dex_bonus": true,
+      "max_bonus": 2
+    },
+    "str_minimum": 0,
+    "stealth_disadvantage": true,
+    "weight": 40,
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/half-plate",
+    "display_order": 8
+  },
+  {
+    "index": "ring-mail",
+    "name": "Ring Mail",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Heavy",
+    "armor_class": {
+      "base": 14,
+      "dex_bonus": false,
+      "max_bonus": null
+    },
+    "str_minimum": 0,
+    "stealth_disadvantage": true,
+    "weight": 40,
+    "cost": {
+      "quantity": 30,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/ring-mail",
+    "display_order": 9
+  },
+  {
+    "index": "chain-mail",
+    "name": "Chain Mail",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Heavy",
+    "armor_class": {
+      "base": 16,
+      "dex_bonus": false,
+      "max_bonus": null
+    },
+    "str_minimum": 13,
+    "stealth_disadvantage": true,
+    "weight": 55,
+    "cost": {
+      "quantity": 75,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/chain-mail",
+    "display_order": 10
+  },
+  {
+    "index": "splint",
+    "name": "Splint",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Heavy",
+    "armor_class": {
+      "base": 17,
+      "dex_bonus": false,
+      "max_bonus": null
+    },
+    "str_minimum": 15,
+    "stealth_disadvantage": true,
+    "weight": 60,
+    "cost": {
+      "quantity": 200,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/splint",
+    "display_order": 11
+  },
+  {
+    "index": "plate",
+    "name": "Plate",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Heavy",
+    "armor_class": {
+      "base": 18,
+      "dex_bonus": false,
+      "max_bonus": null
+    },
+    "str_minimum": 15,
+    "stealth_disadvantage": true,
+    "weight": 65,
+    "cost": {
+      "quantity": 1500,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/plate",
+    "display_order": 12
+  },
+  {
+    "index": "shield",
+    "name": "Shield",
+    "equipment_category": {
+      "index": "armor",
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "armor_category": "Shield",
+    "armor_class": {
+      "base": 2,
+      "dex_bonus": false,
+      "max_bonus": null
+    },
+    "str_minimum": 0,
+    "stealth_disadvantage": false,
+    "weight": 6,
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "url": "/api/equipment/shield",
+    "display_order": 13
   }
 ]
