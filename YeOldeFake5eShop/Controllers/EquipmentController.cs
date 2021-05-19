@@ -13,28 +13,33 @@ namespace YeOldeFake5eShop.Controllers
     {
         public IActionResult Gear()
         {
-            List<Gear> gearList = JSONParser.GetGear();
+            List<Equipment> gearList = JSONParser.GetEquipment("gear");
             return View(gearList);
         }
         public IActionResult Armor()
         {
-            return View();
+            List<Equipment> armorList = JSONParser.GetEquipment("armor");
+            return View(armorList);
         }
         public IActionResult Packs()
         {
-            return View();
+            List<Equipment> packsList = JSONParser.GetEquipment("packs");
+            return View(packsList);
         }
         public IActionResult Mounts()
         {
-            return View();
+            List<Equipment> mountsList = JSONParser.GetEquipment("mounts");
+            return View(mountsList);
         }
         public IActionResult Tools()
         {
-            return View();
+            List<Equipment> toolsList = JSONParser.GetEquipment("tools");
+            return View(toolsList);
         }
         public IActionResult Weapons()
         {
-            return View();
+            List<Equipment> weaponsList = JSONParser.GetEquipment("weapons");
+            return View(weaponsList);
         }
     }
 }

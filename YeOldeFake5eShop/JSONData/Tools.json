@@ -13,7 +13,6 @@
             "unit": "gp"
         },
         "weight": 8,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/alchemists-supplies",
         "display_order": 1
     },
@@ -31,7 +30,6 @@
             "unit": "gp"
         },
         "weight": 6,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/bagpipes",
         "display_order": 25
     },
@@ -49,7 +47,6 @@
             "unit": "gp"
         },
         "weight": 9,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/brewers-supplies",
         "display_order": 2
     },
@@ -67,7 +64,6 @@
             "unit": "gp"
         },
         "weight": 5,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/calligraphers-supplies",
         "display_order": 3
     },
@@ -85,7 +81,6 @@
             "unit": "gp"
         },
         "weight": 6,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/carpenters-tools",
         "display_order": 4
     },
@@ -103,7 +98,6 @@
             "unit": "gp"
         },
         "weight": 6,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/cartographers-tools",
         "display_order": 5
     },
@@ -121,7 +115,6 @@
             "unit": "gp"
         },
         "weight": 5,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/cobblers-tools",
         "display_order": 6
     },
@@ -139,7 +132,6 @@
             "unit": "gp"
         },
         "weight": 8,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/cooks-utensils",
         "display_order": 7
     },
@@ -157,7 +149,6 @@
             "unit": "sp"
         },
         "weight": 0,
-        "desc": "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.",
         "url": "/api/equipment/dice-set",
         "display_order": 20
     },
@@ -193,7 +184,6 @@
             "unit": "gp"
         },
         "weight": 3,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/drum",
         "display_order": 26
     },
@@ -211,7 +201,6 @@
             "unit": "gp"
         },
         "weight": 10,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/dulcimer",
         "display_order": 27
     },
@@ -229,7 +218,6 @@
             "unit": "gp"
         },
         "weight": 1,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/flute",
         "display_order": 28
     },
@@ -265,7 +253,6 @@
             "unit": "gp"
         },
         "weight": 5,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/glassblowers-tools",
         "display_order": 8
     },
@@ -301,7 +288,6 @@
             "unit": "gp"
         },
         "weight": 2,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/horn",
         "display_order": 31
     },
@@ -319,7 +305,6 @@
             "unit": "gp"
         },
         "weight": 2,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/jewelers-tools",
         "display_order": 9
     },
@@ -337,7 +322,6 @@
             "unit": "gp"
         },
         "weight": 5,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/leatherworkers-tools",
         "display_order": 10
     },
@@ -355,7 +339,6 @@
             "unit": "gp"
         },
         "weight": 2,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/lute",
         "display_order": 29
     },
@@ -373,7 +356,6 @@
             "unit": "gp"
         },
         "weight": 2,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/lyre",
         "display_order": 30
     },
@@ -391,7 +373,6 @@
             "unit": "gp"
         },
         "weight": 8,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/masons-tools",
         "display_order": 11
     },
@@ -427,7 +408,6 @@
             "unit": "gp"
         },
         "weight": 5,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/painters-supplies",
         "display_order": 12
     },
@@ -445,7 +425,6 @@
             "unit": "gp"
         },
         "weight": 2,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/pan-flute",
         "display_order": 32
     },
@@ -463,7 +442,6 @@
             "unit": "sp"
         },
         "weight": 0,
-        "desc": "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.",
         "url": "/api/equipment/playing-card-set",
         "display_order": 22
     },
@@ -499,7 +477,6 @@
             "unit": "gp"
         },
         "weight": 3,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/potters-tools",
         "display_order": 13
     },
@@ -517,7 +494,6 @@
             "unit": "gp"
         },
         "weight": 1,
-        "desc": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
         "url": "/api/equipment/shawm",
         "display_order": 33
     },
@@ -535,7 +511,6 @@
             "unit": "gp"
         },
         "weight": 8,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/smiths-tools",
         "display_order": 14
     },
@@ -571,7 +546,6 @@
             "unit": "gp"
         },
         "weight": 10,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/tinkers-tools",
         "display_order": 15
     },
@@ -607,7 +581,6 @@
             "unit": "gp"
         },
         "weight": 5,
-        "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/weavers-tools",
         "display_order": 16
     },
@@ -628,5 +601,40 @@
         "desc": "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
         "url": "/api/equipment/woodcarvers-tools",
         "display_order": 17
+    },
+    {
+        "index": "dragonchess-set",
+        "name": "Dragonchess set",
+        "equipment_category": {
+            "index": "tools",
+            "name": "Tools",
+            "url": "/api/equipment-categories/tools"
+        },
+        "tool_category": "Gaming Sets",
+        "cost": {
+            "quantity": 1,
+            "unit": "gp"
+        },
+        "weight": 0.5,
+        "url": "/api/equipment/dice-set",
+        "display_order": 20
+    },
+    {
+        "index": "three-dragon-ante-set",
+        "name": "Three Dragon Ante set",
+        "equipment_category": {
+            "index": "tools",
+            "name": "Tools",
+            "url": "/api/equipment-categories/tools"
+        },
+        "tool_category": "Gaming Sets",
+        "cost": {
+            "quantity": 1,
+            "unit": "gp"
+        },
+        "weight": 0,
+        "desc": "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.",
+        "url": "/api/equipment/dice-set",
+        "display_order": 22
     }
 ]

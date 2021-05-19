@@ -3,7 +3,7 @@
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
-            <h2 class="text-primary">Adventuring Gear</h2>
+            <h2 class="text-primary">Mounts & Vehicles</h2>
         </div>
         <div class="col-6">
         </div>
@@ -15,8 +15,8 @@
 <table class="table table-bordered" style="width:100%">
     <thead>
         <tr>
-            <th>GEAR NAME</th>
-            <th>GEAR CATEGORY</th>
+            <th>MOUNT/VEHICLE NAME</th>
+            <th>MOUNT/VEHICLE CATEGORY</th>
             <th>WEIGHT</th>
             <th>COST</th>
             <th></th>
@@ -28,7 +28,11 @@
         <tr>
             <td width="30%" class="font-weight-bold">@obj.Name</td>
             <td width="30%" class="font-weight-bold">@obj.GearCategory</td>
-            <td width="10%" class="font-weight-bold">@obj.Weight lb.</td>
+            @if (obj.Weight == 0) {
+                <td width="10%" class="font-weight-bold">--</td>
+            } else {
+                <td width="10%" class="font-weight-bold">@obj.Weight lb.</td>
+            }
             <td width="10%" class="font-weight-bold">@obj.CostQuantity @obj.CostUnit</td>
             <td>Add to Cart</td>
         </tr>
@@ -38,7 +42,6 @@
                     <td colspan="5" class="px-5">@obj.Description</td>
                 </tr>
                 }
-
             }
     </tbody>
 </table>

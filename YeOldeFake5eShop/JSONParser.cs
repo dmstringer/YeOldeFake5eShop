@@ -11,48 +11,41 @@ namespace YeOldeFake5eShop
 {
     public static class JSONParser
     {
-        public static List<Gear> GetGear()
-        {
-            var path = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSONData/AdventuringGear.json");
-            JArray gearArray = JArray.Parse(File.ReadAllText(path));
-            List<Gear> gearObjList = new List<Gear>() { };
+        public static Dictionary<string, string[]> categoryDict = new Dictionary<string, string[]> { 
+            { "gear", new string[] {"gear_category", "JSONData/AdventuringGear.json"} }, 
+            { "armor", new string[] {"armor_category", "JSONData/Armor.json" } }, 
+            { "weapons", new string[] {"weapon_category", "JSONData/Weapons.json" } }, 
+            { "tools", new string[] {"tool_category", "JSONData/Tools.json" } },
+            { "mounts", new string[] {"vehicle_category", "JSONData/MountsAndVehicles.json" } },
+            { "packs", new string[] {"gear_category", "JSONData/EquipmentPacks.json" } }
+        };
 
-            foreach (JObject item in gearArray)
+        public static List<Equipment> GetEquipment(string category)
+        {
+            var path = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), categoryDict[category][1]);
+            JArray equipmentArray = JArray.Parse(File.ReadAllText(path));
+            List<Equipment> equipmentObjList = new List<Equipment>() { };
+
+            foreach (JObject item in equipmentArray)
             {
-                Gear gearItem = new Gear() { 
-                    Name = (string)item["name"],
-                    GearCategory = (string)item["gear_category"]["name"],
-                    CostQuantity = (int)item["cost"]["quantity"],
-                    CostUnit = (string)item["cost"]["unit"],
-                    Weight = (int)item["weight"],
-                    DisplayOrder = (int)item["display_order"],
-                    Description = (string)item["desc"]
-                };
-                gearObjList.Add(gearItem);
+                Equipment gearItem = new Equipment() { };
+
+                gearItem.Name = (string)item["name"];
+                gearItem.CostQuantity = (int)item["cost"]["quantity"];
+                gearItem.CostUnit = (string)item["cost"]["unit"];
+                gearItem.Weight = (double)item["weight"];
+                gearItem.DisplayOrder = (int)item["display_order"];
+                gearItem.Description = (string)item["desc"];
+
+                if (category == "gear" || category == "packs") {
+                    gearItem.GearCategory = (string)item[categoryDict[category][0]]["name"];
+                } else {
+                    gearItem.GearCategory = (string)item[categoryDict[category][0]];
+                }
+                equipmentObjList.Add(gearItem);
             }
-            return gearObjList;
+            var sortedObjList = equipmentObjList.OrderBy(gear => gear.DisplayOrder).ToList();
+            return sortedObjList;
         }
-        /*
-        public static JArray GetArmor()
-        {
-
-        }
-        public static JArray GetTools()
-        {
-
-        }
-        public static JArray GetWeapons()
-        {
-
-        }
-        public static JArray GetMounts()
-        {
-
-        }
-        public static JArray GetPacks()
-        {
-
-        }
-        */
     }
 }
