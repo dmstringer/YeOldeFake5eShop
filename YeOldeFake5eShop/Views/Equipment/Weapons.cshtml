@@ -30,7 +30,7 @@
             <td width="30%" class="font-weight-bold">@obj.GearCategory</td>
             <td width="10%" class="font-weight-bold">@obj.Weight lb.</td>
             <td width="10%" class="font-weight-bold">@obj.CostQuantity @obj.CostUnit</td>
-            <td>Add to Cart</td>
+            <td><a asp-controller="Cart" asp-action="Buy" asp-route-id="@obj.Name">Add to Cart</a></td>
         </tr>
                 @if (obj.Description != null) 
                 { 

@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
 
-namespace YeOldeFake5eShop
+namespace YeOldeFake5eShop.Helpers
 {
     public class APIConnection
     {
-        static HttpClient client = new HttpClient();
+        //My original idea was to use the API I found below to get all my page data,
+        //but because of the limited way that API sends back large lists, I decided to 
+        //extract all his data and just use that as modified local JSON files.
+        //Didn't feel like turning it into a database :)
+
+        //static HttpClient client = new HttpClient();
 
         /*
         public static void KanyeQuote()
@@ -37,8 +42,7 @@ namespace YeOldeFake5eShop
 
 
             var fiveERepsonse = client.GetStringAsync("https://www.dnd5eapi.co/api/equipment").Result;
-            // The response has a name/value pair where the quote is called 'quote'
-            var kanyeQuote = JObject.Parse(fiveERepsonse).GetValue("quote").ToString();
+            
         }
         */
     }

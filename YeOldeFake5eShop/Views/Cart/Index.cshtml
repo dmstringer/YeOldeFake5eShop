@@ -1,0 +1,48 @@
+﻿
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Cart</h2>
+        </div>
+        <div class="col-6">
+        </div>
+    </div>
+</div>
+<h6 class="px-3">Placeholder.</h6>
+<br />
+
+<table class="table table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>OPTION</th>
+            <th>NAME</th>
+            <th>GEAR CATEGORY</th>
+            <th class="text-center">WEIGHT</th>
+            <th class="text-center">COST</th>
+            <th class="text-center">QUANTITY</th>
+            <th class="text-center">SUBTOTAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.cart)
+        {
+        <tr>
+            <td width="10%" class="font-weight-bold"><a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.Equipment.Name">Remove</a></td>
+            <td width="25%" class="font-weight-bold">@item.Equipment.Name</td>
+            <td width="25%" class="font-weight-bold">@item.Equipment.GearCategory</td>
+            <td width="10%" class="font-weight-bold text-center">@item.Equipment.Weight lb.</td>
+            <td width="10%" class="font-weight-bold text-center">@item.Equipment.CostQuantity @item.Equipment.CostUnit</td>
+            <td width="10%" class="font-weight-bold text-center">@item.Quantity</td>
+            <td width="10%" class="font-weight-bold text-center">@(item.Equipment.CostQuantity * item.Quantity) @item.Equipment.CostUnit</td>
+        </tr>
+        }
+    <tr>
+        <td align="right" colspan="3">Total Weight</td>
+        <td class="text-center">@ViewBag.total</td>
+        <td align="right" colspan="2">Total Cost</td>
+        <td class="text-center">@ViewBag.total</td>
+    </tr>
+    </tbody>
+</table>
+<a asp-controller="Home" asp-action="Index">Continue Shopping</a>
+<a asp-controller="Checkout" asp-action="Index" asp-route-id="">Go To Checkout</a>

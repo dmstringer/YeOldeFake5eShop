@@ -7,10 +7,14 @@ using System.Reflection;
 using System.Threading.Tasks;
 using YeOldeFake5eShop.Models;
 
-namespace YeOldeFake5eShop
+namespace YeOldeFake5eShop.Helpers
 {
     public static class JSONParser
     {
+        //EquipmentController will pass in a category type to the GetEquipment method.
+        //This dictionary is them used for two things:
+        //1. dictates the file path to the JSON file I want to open for the specific equipment data
+        //2. during the formation of the Equipment items, it will use whatever 'sub' category name I need for that specific category type
         public static Dictionary<string, string[]> categoryDict = new Dictionary<string, string[]> { 
             { "gear", new string[] {"gear_category", "JSONData/AdventuringGear.json"} }, 
             { "armor", new string[] {"armor_category", "JSONData/Armor.json" } }, 
@@ -42,6 +46,15 @@ namespace YeOldeFake5eShop
                 } else {
                     gearItem.GearCategory = (string)item[categoryDict[category][0]];
                 }
+
+                if ((string)item["cost"]["unit"] == "gp") {
+                    gearItem.ConvertedCost = (double)item["cost"]["quantity"];
+                } else if ((string)item["cost"]["unit"] == "sp") {
+                    gearItem.ConvertedCost = ((double)item["cost"]["quantity"])/10;
+                } else {
+                    gearItem.ConvertedCost = ((double)item["cost"]["quantity"])/100;
+                }
+
                 equipmentObjList.Add(gearItem);
             }
             var sortedObjList = equipmentObjList.OrderBy(gear => gear.DisplayOrder).ToList();

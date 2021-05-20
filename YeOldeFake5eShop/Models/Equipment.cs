@@ -11,6 +11,7 @@ namespace YeOldeFake5eShop.Models
         public string GearCategory { get; set; }
         public int CostQuantity { get; set; }
         public string CostUnit { get; set; }
+        public double ConvertedCost { get; set; }
         public double Weight { get; set; }
         public int DisplayOrder { get; set; }
         public string Description { get; set; }
