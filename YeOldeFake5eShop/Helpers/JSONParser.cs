@@ -40,6 +40,9 @@ namespace YeOldeFake5eShop.Helpers
                 gearItem.Weight = (double)item["weight"];
                 gearItem.DisplayOrder = (int)item["display_order"];
                 gearItem.Description = (string)item["desc"];
+                gearItem.Gold = 0;
+                gearItem.Silver = 0;
+                gearItem.Copper = 0;
 
                 if (category == "gear" || category == "packs") {
                     gearItem.GearCategory = (string)item[categoryDict[category][0]]["name"];
@@ -48,11 +51,11 @@ namespace YeOldeFake5eShop.Helpers
                 }
 
                 if ((string)item["cost"]["unit"] == "gp") {
-                    gearItem.ConvertedCost = (double)item["cost"]["quantity"];
+                    gearItem.Gold = (int)item["cost"]["quantity"];
                 } else if ((string)item["cost"]["unit"] == "sp") {
-                    gearItem.ConvertedCost = ((double)item["cost"]["quantity"])/10;
+                    gearItem.Silver = (int)item["cost"]["quantity"];
                 } else {
-                    gearItem.ConvertedCost = ((double)item["cost"]["quantity"])/100;
+                    gearItem.Copper = (int)item["cost"]["quantity"];
                 }
 
                 equipmentObjList.Add(gearItem);

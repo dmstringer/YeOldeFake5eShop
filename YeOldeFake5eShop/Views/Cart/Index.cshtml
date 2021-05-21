@@ -1,4 +1,7 @@
 ﻿
+<br />
+<br />
+<br />
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
@@ -8,7 +11,7 @@
         </div>
     </div>
 </div>
-<h6 class="px-3">Placeholder.</h6>
+<!--<h6 class="px-3">Placeholder.</h6>-->
 <br />
 
 <table class="table table-bordered" style="width:100%">
@@ -17,32 +20,50 @@
             <th>OPTION</th>
             <th>NAME</th>
             <th>GEAR CATEGORY</th>
-            <th class="text-center">WEIGHT</th>
+            <th class="text-center" colspan="2">QTY</th>
+            <th class="text-center">WT</th>
+            <th class="text-center">WT TOTAL</th>
             <th class="text-center">COST</th>
-            <th class="text-center">QUANTITY</th>
             <th class="text-center">SUBTOTAL</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in ViewBag.cart)
         {
-        <tr>
-            <td width="10%" class="font-weight-bold"><a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.Equipment.Name">Remove</a></td>
-            <td width="25%" class="font-weight-bold">@item.Equipment.Name</td>
-            <td width="25%" class="font-weight-bold">@item.Equipment.GearCategory</td>
-            <td width="10%" class="font-weight-bold text-center">@item.Equipment.Weight lb.</td>
-            <td width="10%" class="font-weight-bold text-center">@item.Equipment.CostQuantity @item.Equipment.CostUnit</td>
-            <td width="10%" class="font-weight-bold text-center">@item.Quantity</td>
-            <td width="10%" class="font-weight-bold text-center">@(item.Equipment.CostQuantity * item.Quantity) @item.Equipment.CostUnit</td>
-        </tr>
+            <tr>
+                <td width="8%" class="align-middle"><a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.Equipment.Name">Remove</a></td>
+                <td width="18%" class="align-middle">@item.Equipment.Name</td>
+                <td width="18%" class="align-middle">@item.Equipment.GearCategory</td>
+                <td width="4%" class="text-center align-middle">
+                    <div class="row m-0 p-0 align-middle">
+                        <div class="col m-0 p-0">
+                            <div class="row m-0 p-0 align-items-center justify-content-center">
+                                <a asp-controller="Cart" asp-action="Up" asp-route-id="@item.Equipment.Name"><i class="fa fa-caret-up"></i></a>
+                            </div>
+                            <div class="row m-0 p-0 align-items-center justify-content-center">
+                                <a asp-controller="Cart" asp-action="Down" asp-route-id="@item.Equipment.Name"><i class="fa fa-caret-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td width="5%" class="text-center align-middle">@item.Quantity</td>
+                <td width="10%" class="text-center align-middle">@item.Equipment.Weight lb.</td>
+                <td width="14%" class="text-center align-middle">@(@item.Equipment.Weight * item.Quantity) lb.</td>
+                <td width="8%" class="text-center align-middle">@item.Equipment.CostQuantity @item.Equipment.CostUnit</td>
+                <td width="15%" class="text-center align-middle">@(item.Equipment.CostQuantity * item.Quantity) @item.Equipment.CostUnit</td>
+            </tr>
         }
-    <tr>
-        <td align="right" colspan="3">Total Weight</td>
-        <td class="text-center">@ViewBag.total</td>
-        <td align="right" colspan="2">Total Cost</td>
-        <td class="text-center">@ViewBag.total</td>
-    </tr>
+        <tr>
+            <td align="right" colspan="6">TOTALS</td>
+            <td class="text-center">@ViewBag.totalweight lb.</td>
+            <td align="right"></td>
+            <td class="text-center">@ViewBag.totalgold gp @ViewBag.totalsilver sp @ViewBag.totalcopper cp</td>
+        </tr>
     </tbody>
 </table>
-<a asp-controller="Home" asp-action="Index">Continue Shopping</a>
+
+<a href='javascript:history.go(-1)'>Continue Shopping</a>
+<br />
+<!-- <a asp-controller="Home" asp-action="Index">Continue Shopping</a> -->
 <a asp-controller="Checkout" asp-action="Index" asp-route-id="">Go To Checkout</a>
+

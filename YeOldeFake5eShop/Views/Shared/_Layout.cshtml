@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - YeOldeFake5eShop</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" id="navTitle">Ye Olde Fake 5e Shop</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -36,14 +37,21 @@
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Gear">Adventuring Gear</a>
                                     <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Armor">Armor</a>
-                                    <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Weapons">Weapons</a>
-                                    <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Tools">Tools</a>
-                                    <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Mounts">Mounts & Vehicles</a>
                                     <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Packs">Equipment Packs</a>
+                                    <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Mounts">Mounts & Vehicles</a>
+                                    <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Tools">Tools</a>
+                                    <a class="dropdown-item aNavClass" asp-area="" asp-controller="Equipment" asp-action="Weapons">Weapons</a>
                                 </div>
                             </div>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link text-dark">|</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark aNavClass" asp-area="" asp-controller="Cart" asp-action="Index">Cart</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>

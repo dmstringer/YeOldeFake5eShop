@@ -16,14 +16,6 @@ namespace YeOldeFake5eShop.ViewModels
         public List<Equipment> tools = JSONParser.GetEquipment("tools");
         public List<Equipment> weapons = JSONParser.GetEquipment("weapons");
 
-        /*
-        public List<Equipment> findAll() 
-        {
-            _equipment = new List<Equipment> { }; // he created a dummy list of products
-
-            return _equipment;
-        }*/
-
         public Equipment find(string name)
         {
             List<Equipment> equipment = gear;
