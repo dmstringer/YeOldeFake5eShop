@@ -12,7 +12,7 @@
             "quantity": 5,
             "unit": "cp"
         },
-        "weight": 10,
+        "weight": 0,
         "url": "/api/equipment/animal-feed-1-day",
         "display_order": 25
     },
@@ -29,7 +29,7 @@
             "quantity": 1600,
             "unit": "gp"
         },
-        "weight": 40,
+        "weight": 0,
         "url": "/api/equipment/barding-breastplate",
         "display_order": 15
     },
@@ -46,7 +46,7 @@
             "quantity": 300,
             "unit": "gp"
         },
-        "weight": 110,
+        "weight": 0,
         "url": "/api/equipment/barding-chain-mail",
         "display_order": 18
     },
@@ -63,7 +63,7 @@
             "quantity": 200,
             "unit": "gp"
         },
-        "weight": 40,
+        "weight": 0,
         "url": "/api/equipment/barding-chain-shirt",
         "display_order": 13
     },
@@ -80,7 +80,7 @@
             "quantity": 3000,
             "unit": "gp"
         },
-        "weight": 80,
+        "weight": 0,
         "url": "/api/equipment/barding-half-plate",
         "display_order": 16
     },
@@ -97,7 +97,7 @@
             "quantity": 40,
             "unit": "gp"
         },
-        "weight": 24,
+        "weight": 0,
         "url": "/api/equipment/barding-hide",
         "display_order": 12
     },
@@ -114,7 +114,7 @@
             "quantity": 40,
             "unit": "gp"
         },
-        "weight": 20,
+        "weight": 0,
         "url": "/api/equipment/barding-leather",
         "display_order": 10
     },
@@ -131,7 +131,7 @@
             "quantity": 20,
             "unit": "gp"
         },
-        "weight": 16,
+        "weight": 0,
         "url": "/api/equipment/barding-padded",
         "display_order": 9
     },
@@ -148,7 +148,7 @@
             "quantity": 6000,
             "unit": "gp"
         },
-        "weight": 130,
+        "weight": 0,
         "desc": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
         "url": "/api/equipment/barding-plate",
         "display_order": 20
@@ -166,7 +166,7 @@
             "quantity": 120,
             "unit": "gp"
         },
-        "weight": 80,
+        "weight": 0,
         "url": "/api/equipment/barding-ring-mail",
         "display_order": 17
     },
@@ -183,7 +183,7 @@
             "quantity": 200,
             "unit": "gp"
         },
-        "weight": 90,
+        "weight": 0,
         "url": "/api/equipment/barding-scale-mail",
         "display_order": 14
     },
@@ -200,7 +200,7 @@
             "quantity": 800,
             "unit": "gp"
         },
-        "weight": 120,
+        "weight": 0,
         "url": "/api/equipment/barding-splint",
         "display_order": 19
     },
@@ -217,7 +217,7 @@
             "quantity": 180,
             "unit": "gp"
         },
-        "weight": 26,
+        "weight": 0,
         "url": "/api/equipment/barding-studded-leather",
         "display_order": 11
     },
@@ -234,7 +234,7 @@
             "quantity": 2,
             "unit": "gp"
         },
-        "weight": 1,
+        "weight": 0,
         "url": "/api/equipment/bit-and-bridle",
         "display_order": 21
     },
@@ -273,7 +273,7 @@
             "quantity": 100,
             "unit": "gp"
         },
-        "weight": 600,
+        "weight": 0,
         "url": "/api/equipment/carriage",
         "display_order": 22
     },
@@ -290,7 +290,7 @@
             "quantity": 15,
             "unit": "gp"
         },
-        "weight": 200,
+        "weight": 0,
         "url": "/api/equipment/cart",
         "display_order": 23
     },
@@ -307,7 +307,7 @@
             "quantity": 250,
             "unit": "gp"
         },
-        "weight": 100,
+        "weight": 0,
         "url": "/api/equipment/chariot",
         "display_order": 24
     },
@@ -542,7 +542,7 @@
             "unit": "gp"
         },
         "desc": "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted. An exotic saddle is required for riding any aquatic or flying mount.",
-        "weight": 25,
+        "weight": 0,
         "url": "/api/equipment/riding",
         "display_order": 29
     },
@@ -581,7 +581,7 @@
             "quantity": 60,
             "unit": "gp"
         },
-        "weight": 50,
+        "weight": 0,
         "url": "/api/equipment/saddle-exotic",
         "display_order": 26
     },
@@ -598,7 +598,7 @@
             "quantity": 20,
             "unit": "gp"
         },
-        "weight": 30,
+        "weight": 0,
         "url": "/api/equipment/saddle-military",
         "display_order": 27
     },
@@ -615,7 +615,7 @@
             "quantity": 5,
             "unit": "gp"
         },
-        "weight": 15,
+        "weight": 0,
         "url": "/api/equipment/saddle-pack",
         "display_order": 28
     },
@@ -632,7 +632,7 @@
             "quantity": 4,
             "unit": "gp"
         },
-        "weight": 8,
+        "weight": 0,
         "url": "/api/equipment/saddlebags",
         "display_order": 30
     },
@@ -670,7 +670,7 @@
             "quantity": 20,
             "unit": "gp"
         },
-        "weight": 300,
+        "weight": 0,
         "url": "/api/equipment/sled",
         "display_order": 31
     },
@@ -704,7 +704,7 @@
             "quantity": 35,
             "unit": "gp"
         },
-        "weight": 400,
+        "weight": 0,
         "url": "/api/equipment/wagon",
         "display_order": 33
     },

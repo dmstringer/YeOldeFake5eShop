@@ -11,16 +11,41 @@
         </div>
     </div>
 </div>
-<!--<h6 class="px-3">Placeholder.</h6>-->
-<br />
+<h6 class="px-3">Compact version for printing if you wish.</h6>
+    <br />
 
-<table class="table table-bordered" style="width:100%">
-    <tr>
-        <th>Total Amount To Pay</th>
-    </tr>
-    <tr>
-        <td>
-            @ViewBag.totalgold gp @ViewBag.totalsilver sp @ViewBag.totalcopper cp
-        </td>
-    </tr>
-</table>
+    <table class="table table-sm table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>GEAR CATEGORY</th>
+                <th class="text-center">QTY</th>
+                <th class="text-center">WT</th>
+                <th class="text-center">WT TOTAL</th>
+                <th class="text-center">COST</th>
+                <th class="text-center">SUBTOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.cart)
+            {
+                <tr>
+                    <td width="25%" class="align-middle">@item.Equipment.Name</td>
+                    <td width="30%" class="align-middle">@item.Equipment.GearCategory</td>
+                    <td width="5%" class="text-center align-middle">@item.Quantity</td>
+                    <td width="8%" class="text-center align-middle">@item.Equipment.Weight lb.</td>
+                    <td width="12%" class="text-center align-middle">@(@item.Equipment.Weight * item.Quantity) lb.</td>
+                    <td width="8%" class="text-center align-middle">@item.Equipment.CostQuantity @item.Equipment.CostUnit</td>
+                    <td width="12%" class="text-center align-middle">@(item.Equipment.CostQuantity * item.Quantity) @item.Equipment.CostUnit</td>
+                </tr>
+            }
+            <tr>
+                <td align="right" colspan="4">TOTALS</td>
+                <td class="text-center">@ViewBag.totalweight lb.</td>
+                <td align="right"></td>
+                <td class="text-center">@ViewBag.totalgold gp <br />@ViewBag.totalsilver sp <br />@ViewBag.totalcopper cp</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a asp-controller="Cart" asp-action="Index" asp-route-id="">Back To Cart</a>

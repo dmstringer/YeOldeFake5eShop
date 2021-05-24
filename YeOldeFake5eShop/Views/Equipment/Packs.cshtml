@@ -1,48 +1,52 @@
 ﻿@model List<YeOldeFake5eShop.Models.Equipment>
 
-    <br />
-    <br />
-    <br />
-    <div class="container p-3">
-        <div class="row pt-4">
-            <div class="col-6">
-                <h2 class="text-primary">Equipment Packs</h2>
-            </div>
-            <div class="col-6">
-            </div>
+@{
+    TempData["equipType"] = "Packs";
+}
+
+<br />
+<br />
+<br />
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Equipment Packs</h2>
+        </div>
+        <div class="col-6">
         </div>
     </div>
-    <h6 class="px-3">I have strived to list the equipment in the same order as presented in the PHB tables, where possible.</h6>
-    <br />
+</div>
+<h6 class="px-3">I have strived to list the equipment in the same order as presented in the PHB tables, where possible.</h6>
+<br />
 
-    <table class="table table-bordered" style="width:100%">
-        <thead>
+<table class="table table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>PACK NAME</th>
+            <th>PACK CATEGORY</th>
+            <th>WEIGHT</th>
+            <th>COST</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
             <tr>
-                <th>PACK NAME</th>
-                <th>PACK CATEGORY</th>
-                <th>WEIGHT</th>
-                <th>COST</th>
-                <th></th>
+                <td width="30%" class="font-weight-bold">@obj.Name</td>
+                <td width="30%" class="font-weight-bold">@obj.GearCategory</td>
+                <td width="10%" class="font-weight-bold">@obj.Weight lb.</td>
+                <td width="10%" class="font-weight-bold">@obj.CostQuantity @obj.CostUnit</td>
+                <td><a asp-controller="Cart" asp-action="Buy" asp-route-id="@obj.Name">Add to Cart</a></td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var obj in Model)
+            @if (obj.Description != null)
             {
                 <tr>
-                    <td width="30%" class="font-weight-bold">@obj.Name</td>
-                    <td width="30%" class="font-weight-bold">@obj.GearCategory</td>
-                    <td width="10%" class="font-weight-bold">@obj.Weight lb.</td>
-                    <td width="10%" class="font-weight-bold">@obj.CostQuantity @obj.CostUnit</td>
-                    <td><a asp-controller="Cart" asp-action="Buy" asp-route-id="@obj.Name">Add to Cart</a></td>
+                    <td colspan="5" class="px-5">@obj.Description</td>
                 </tr>
-                @if (obj.Description != null)
-                {
-                    <tr>
-                        <td colspan="5" class="px-5">@obj.Description</td>
-                    </tr>
-                }
-
             }
-        </tbody>
-    </table>
+
+        }
+    </tbody>
+</table>
 

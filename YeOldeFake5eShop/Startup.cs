@@ -61,7 +61,7 @@ namespace YeOldeFake5eShop
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+        });
         }
     }
 }

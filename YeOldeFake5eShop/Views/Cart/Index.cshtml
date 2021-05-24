@@ -54,16 +54,18 @@
             </tr>
         }
         <tr>
-            <td align="right" colspan="6">TOTALS</td>
+            <td align="right" colspan="6">TOTALS <br /> (for the final totals on copper and silver coins,<br />it converts 10-to-1 to the next coin type up)</td>
             <td class="text-center">@ViewBag.totalweight lb.</td>
             <td align="right"></td>
-            <td class="text-center">@ViewBag.totalgold gp @ViewBag.totalsilver sp @ViewBag.totalcopper cp</td>
+            <td class="text-center">@ViewBag.totalgold gp <br />@ViewBag.totalsilver sp <br />@ViewBag.totalcopper cp</td>
         </tr>
     </tbody>
 </table>
 
-<a href='javascript:history.go(-1)'>Continue Shopping</a>
+<a asp-controller="Equipment" asp-action=@TempData["equipType"].ToString()>Continue Shopping</a>
+@{ 
+    TempData.Keep("equipType");
+}
 <br />
-<!-- <a asp-controller="Home" asp-action="Index">Continue Shopping</a> -->
 <a asp-controller="Checkout" asp-action="Index" asp-route-id="">Go To Checkout</a>
 
